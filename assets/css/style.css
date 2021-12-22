@@ -1,18 +1,22 @@
+/* resetting the base */
 * {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* variables */
 :root {
   --orange-color: orange;
 }
 
+/* background image */
 html {
   background: url("../images/halloween-2837936.png") bottom center;
   background-size: cover;
 }
 
+/* the container for the keys */
 .keys {
   display: flex;
   flex-wrap: wrap;
@@ -22,6 +26,7 @@ html {
   justify-content: center;
 }
 
+/* styles each individual key */
 .key {
   border: 3px solid black;
   border-radius: 8px;
@@ -36,17 +41,20 @@ html {
   text-shadow: 0 0 8px black;
 }
 
+/* the added class when a sound is played */
 .playing {
   transform: scale(1.2);
   border-color: var(--orange-color);
   box-shadow: 0 0 16px var(--orange-color);
 }
 
+/* ensures the key is on a different line than the sound name */
 kbd {
   display: block;
   font-size: 64px;
 }
 
+/* styles the name of the sound */
 .sound {
   font-size: 20px;
   text-transform: uppercase;
